@@ -63,7 +63,7 @@ export const projectsData = [
   {
     title: "Secret Chamber",
     description:
-      "I developed the front-end UI for a four-way end-to-end encrypted video chat app, and implemented Redis for logging, stats keeping, system data recording and data persistence.",
+      "I developed the front-end UI for a four-way end-to-end encrypted video chat app, and implemented Redis for logging, stats keeping, system data recording and data persistence. Also included localized language based on the user's browser settings",
     tags: ["React", "Vite", "Redis", "Bootstrap", "WebRTC"],
     imageUrl: mslt,
     url: "https://mslt.in1859.com",
