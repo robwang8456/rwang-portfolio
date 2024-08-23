@@ -1,10 +1,9 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
+import { BsLightningCharge } from "react-icons/bs";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import mslt from "@/public/mslt.png";
+import casecobra from "@/public/casecobra.png";
+import { LiaChalkboardTeacherSolid } from "react-icons/lia";
 
 export const links = [
   {
@@ -35,52 +34,47 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "ChargeFuze",
+    location: "Los Angeles, CA",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "I worked at ChargeFuze as a marketing and business development intern, where I was responsible for initializing 500+ rentals for the company. I also worked as a mandarin translator for the company in the meantime.",
+    icon: React.createElement(BsLightningCharge),
+    date: "2021-2024",
+  },
+  {
+    title: "Lindamood-Bell Learning Process",
+    location: "Pacific Palisades, CA",
+    description:
+      "I worked at Lindamood-Bell as an educational therapist, where I taught reading comprehension, spelling, math, and learning strategies to students with dyslexia, autism spectrum disorder, and other learning disabilities.",
+    icon: React.createElement(LiaChalkboardTeacherSolid),
+    date: "2022",
+  },
+  {
+    title: "UC Santa Cruz",
+    location: "Santa Cruz, CA",
+    description:
+      "I graduated from UC Santa Cruz in 2024 with a Computer Science BS degree. During my time there, I became very familiar with front-end development.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
-  },
-  {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
-  },
-  {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "2024",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Secret Chamber",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "I developed the front-end UI for a four-way end-to-end encrypted video chat app, and implemented Redis for logging, stats keeping, system data recording and data persistence.",
+    tags: ["React", "Vite", "Redis", "Bootstrap", "WebRTC"],
+    imageUrl: mslt,
+    url: "https://mslt.in1859.com",
   },
   {
-    title: "rmtDev",
+    title: "CaseCobra",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
-  },
-  {
-    title: "Word Analytics",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "Full-stack e-commerce store where users can upload pictures for customized phone cases. Implemented auth with Kinde and payment system with Stripe.",
+    tags: ["React", "Next.js", "Tailwind", "Stripe", "Kinde"],
+    imageUrl: casecobra,
+    url: "https://case.in1859.com",
   },
 ] as const;
 
@@ -91,17 +85,16 @@ export const skillsData = [
   "TypeScript",
   "React",
   "Next.js",
+  "Vite",
   "Node.js",
   "Git",
   "Tailwind",
+  "Bootstrap",
   "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
+  "Redis",
   "PostgreSQL",
-  "Python",
-  "Django",
   "Framer Motion",
+  "Python",
+  "Reinforcement Learning",
+  "Machine Learning",
 ] as const;
