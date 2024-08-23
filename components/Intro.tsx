@@ -1,5 +1,6 @@
 "use client";
 
+import { useActiveSectionContext } from "@/context/ActiveSectionContext";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -11,6 +12,7 @@ import { HiDownload } from "react-icons/hi";
 
 const Intro = () => {
   const { ref } = useSectionInView(0.5, "Home");
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (
     <section
@@ -62,13 +64,17 @@ const Intro = () => {
         <Link
           href="#contact"
           className="bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition group"
+          onClick={() => {
+            setActiveSection("Contact");
+            setTimeOfLastClick(Date.now());
+          }}
         >
           Contact me here{" "}
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
 
         <a
-          className="bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition group border border-black/20"
+          className="bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition group borderBlack"
           href="/Zhiyi Wang Resume.pdf"
           download
         >
@@ -77,7 +83,7 @@ const Intro = () => {
         </a>
 
         <a
-          className="bg-white p-4 text-gray-700 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition group border border-black/20"
+          className="bg-white p-4 text-gray-700 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition group borderBlack"
           href="https://www.linkedin.com/in/zhiyi-wang-9675a61a5/"
           target="_blank"
         >
@@ -85,7 +91,7 @@ const Intro = () => {
         </a>
 
         <a
-          className="bg-white p-4 text-gray-700 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition group border border-black/20"
+          className="bg-white p-4 text-gray-700 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition group borderBlack"
           href="https://github.com/robwang8456"
           target="_blank"
         >
