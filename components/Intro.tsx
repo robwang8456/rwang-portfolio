@@ -47,9 +47,9 @@ const Intro = () => {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="font-bold">Hello, I'm Robert.</span> I'm a{" "}
-        <span className="font-bold">front-end developer</span>. I love using
+        <span className="font-bold">full-stack developer</span>. I am experienced in using
         technologies like <span className="font-bold">Next.js</span> and{" "}
-        <span className="font-bold">Vite</span> to build performant webapps.
+        <span className="font-bold">Node</span> to build performant webapps.
       </motion.h1>
 
       <motion.div
@@ -83,7 +83,7 @@ const Intro = () => {
 
         <a
           className="bg-white p-4 text-gray-700 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition group borderBlack"
-          href="https://www.linkedin.com/in/zhiyi-wang-9675a61a5/"
+          href="https://www.linkedin.com/in/rwang8456/"
           target="_blank"
         >
           <BsLinkedin />

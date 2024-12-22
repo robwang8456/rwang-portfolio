@@ -22,14 +22,12 @@ const About = () => {
         After graduating with a degree in{" "}
         <span className="font-medium">Computer Science</span> from{" "}
         <span className="font-medium">UC Santa Cruz</span>, I decided to pursue
-        my passion for programming, especially in front-end development.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
+        my passion for programming, especially in full-stack development.{" "}
+        My favorite part of coding is the problem-solving aspect. I truly love the
         feeling of finally figuring out a solution to a problem. I am familiar
         with{" "}
-        <span className="font-medium">React, Next.js, Node.js, and Vite</span>.
-        I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
+        <span className="font-medium">React, Next.js, TypeScript, and Node.js</span>.
+        I am also familiar with <span className="font-medium">PostgreSQL and Prisma</span>. I am always looking to learn new technologies. I am currently looking for a{" "}
         <span className="font-medium">full-time position</span> as a software
         developer.
       </p>
