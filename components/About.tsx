@@ -27,14 +27,15 @@ const About = () => {
         feeling of finally figuring out a solution to a problem. I am familiar
         with{" "}
         <span className="font-medium">React, Next.js, TypeScript, and Node.js</span>.
-        I am also familiar with <span className="font-medium">PostgreSQL and Prisma</span>. I am always looking to learn new technologies. I am currently looking for a{" "}
+        I am also familiar with <span className="font-medium">PostgreSQL and Prisma</span>. Besides software development, I also am very familiar with <span className="font-medium">compiler designs</span>. 
+        I am always looking to learn new technologies. I am currently looking for a{" "}
         <span className="font-medium">full-time position</span> as a software
-        developer.
+        developer or compiler engineer.
       </p>
 
       <p>
         Outside of work, I am a certified private pilot, and I love flying along
-        the Pacific coast. I also a huge fan of music and I dj very often.
+        the Pacific coast. I also a huge fan of music and I dj and produce very often.
       </p>
     </motion.section>
   );

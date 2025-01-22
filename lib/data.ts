@@ -1,8 +1,11 @@
 import React from "react";
 import { BsLightningCharge } from "react-icons/bs";
 import { LuGraduationCap } from "react-icons/lu";
+import { CiVideoOn } from "react-icons/ci";
+import { CgCardHearts } from "react-icons/cg";
 import mslt from "@/public/mslt.png";
 import casecobra from "@/public/casecobra.png";
+import dealer from "@/public/dealer.png";
 import { LiaChalkboardTeacherSolid } from "react-icons/lia";
 
 export const links = [
@@ -50,12 +53,28 @@ export const experiencesData = [
     date: "2022",
   },
   {
+    title: "BC 142434",
+    location: "Vancouver, BC, Canada",
+    description:
+      "I worked as a full stack developer at the Canadian company, designing and building a responsive and efficient UI using React, TypeScript, Bootstrap, and WebRTC for a video chat web application. I also Implemented Redis to streamline database architecture. Increased scalability and efficiency in logging, statistics keeping, system data recording and data persistence.",
+    icon: React.createElement(CiVideoOn),
+    date: "2023-2024",
+  },
+  {
+    title: "Extreme Intelligence Networking LTD",
+    location: "Beijing, China",
+    description:
+      "I worked as a compiler engineer intern. Created a prototype transpiler for a custom programming language used for statistics tracking for the card game of Bridge. Implemented static variable mapping, keyword parsing, and intermediate code generation.",
+    icon: React.createElement(CgCardHearts),
+    date: "2024-Present",
+  },
+  {
     title: "UC Santa Cruz",
     location: "Santa Cruz, CA",
     description:
-      "I graduated from UC Santa Cruz in 2024 with a Computer Science BS degree. During my time there, I became very familiar with front-end development.",
+      "I graduated from UC Santa Cruz in 2025 with a Computer Science BS degree. During my time there, I became very familiar with software and compiler development.",
     icon: React.createElement(LuGraduationCap),
-    date: "2024",
+    date: "2025",
   },
 ] as const;
 
@@ -66,7 +85,7 @@ export const projectsData = [
       "I developed the front-end UI for a four-way end-to-end encrypted video chat app, and implemented Redis for logging, stats keeping, system data recording and data persistence. Also included localized language based on the user's browser settings",
     tags: ["React", "Vite", "Redis", "Bootstrap", "WebRTC"],
     imageUrl: mslt,
-    url: "https://mslt.in1859.com",
+    url: "https://mslt.online",
   },
   {
     title: "CaseCobra",
@@ -76,25 +95,33 @@ export const projectsData = [
     imageUrl: casecobra,
     url: "https://case.in1859.com",
   },
+  {
+    title: "Bridge Dealer Transpiler",
+    description:
+      "Transpiler for a custom Bridge dealer programming language. Implemented lexical, syntactic, and semantic analysis, as well as intermediate code generation.",
+    tags: ["Compiler", "Intermediate Code Generation", "JavaScript"],
+    imageUrl: dealer,
+    url: "https://bridge.in1859.com",
+  }
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
   "JavaScript",
   "TypeScript",
+  "Compiler Theory",
   "React",
   "Next.js",
-  "Vite",
   "Node.js",
   "Git",
-  "Tailwind",
-  "Bootstrap",
   "Prisma",
   "Redis",
   "PostgreSQL",
-  "Framer Motion",
+  "MongoDB",
+  "Systematic Engineering",
   "Python",
   "Reinforcement Learning",
   "Machine Learning",
+  "Tailwind CSS",
+  "Bootstrap",
+  "HTML5",
 ] as const;
